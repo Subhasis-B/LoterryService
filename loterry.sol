@@ -23,5 +23,6 @@ contract Loterry{
         require(msg.sender == owner && players.length > 5);
         uint i = uint(keccak256(abi.encodePacked(block.timestamp,owner,players))) % players.length;
         players[i].transfer(getBalence());
+        players = new address payable[] (0);
     }
 }
