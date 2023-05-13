@@ -1,0 +1,2 @@
+# LoterryService
+Decentralised loterry service
